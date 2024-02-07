@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='400' height='500' preserveAspectRatio='none' viewBox='0 0 400 500'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1081%26quot%3b)' fill='none'%3e%3crect width='400' height='500' x='0' y='0' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M16 500L516 0L900 0L400 500z' fill='url(%26quot%3b%23SvgjsLinearGradient1082%26quot%3b)'%3e%3c/path%3e%3cpath d='M367 500L-133 0L-223 0L277 500z' fill='url(%26quot%3b%23SvgjsLinearGradient1083%26quot%3b)'%3e%3c/path%3e%3cpath d='M166.26678541586747 500L400 266.2667854158675L400 500z' fill='url(%26quot%3b%23SvgjsLinearGradient1082%26quot%3b)'%3e%3c/path%3e%3cpath d='M0 500L233.73321458413253 500L 0 266.2667854158675z' fill='url(%26quot%3b%23SvgjsLinearGradient1083%26quot%3b)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1081'%3e%3crect width='400' height='500' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient1082'%3e%3cstop stop-color='rgba(0%2c 0%2c 0%2c 0.13)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(0%2c 0%2c 0%2c 0.13)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1083'%3e%3cstop stop-color='rgba(0%2c 0%2c 0%2c 0.13)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(0%2c 0%2c 0%2c 0.13)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  background-attachment: fixed;
+  background-size: contain;
+}
+.calendar-container {
+  padding: 20px;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1250px;
+}
+.month-container {
+  background-color: #fff;
+  border: 0.5px solid #ccc;
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin: 0;
+  max-width: 300px;
+}
+.week {
+  display: flex;
+}
+.day {
+  width: 32px;
+  padding: 6px;
+  text-align: center;
+  border: 0.5px solid #eee;
+}
+.day-name {
+  font-weight: bold;
+}
+.current-month {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 15px, rgba(0, 0, 0, 0.12) 0px -12px 10px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.current-day {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  background-color: rgb(146, 204, 249);
+}
+.titulo {
+  padding: 20px 10px;
+  text-align: center;
+}
+.inputs {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+button {
+  padding: 15px 60px;
+  border-radius: 8px;
+  border: 1px solid black;
+  background-color: #fff;
+  cursor: pointer;
+  margin: 0px 20px;
+}
+.tutorial {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-size: cover;
+  }
+  button {
+    margin: 30px 0px 10px 0px;
+  }
+  .month-container {
+    padding: 20px 30px;
+    margin: 10px;
+    max-width: 260px;
+  }
+}
